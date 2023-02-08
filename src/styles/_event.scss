@@ -8,9 +8,6 @@
         grid-template-columns: 1fr 1fr;
         max-width: 80%;
 
-        @media (max-width: 640px) {
-            display: block;
-        }
     }
 
     &__details {
@@ -41,6 +38,8 @@
         text-transform: uppercase;
 
         &__infos {
+            display: flex;
+            gap: 16px;
 
             &__item {
                 background-color: variables.$corSecundaria;
@@ -73,7 +72,7 @@
 
         .infos-bar {
             &__infos {
-                display: flex;
+                margin-top: 16px;
 
                 &__item {
 
@@ -106,7 +105,9 @@
 
         .infos-bar {
             margin-top: 24px;
+            display: flex;
             justify-content: center;
+
 
         }
     }
