@@ -36,19 +36,42 @@
             }
         }
     }
+
+    @media (max-width: 640px) {
+
+        &__content {
+            &__itens {
+                display: block;
+
+                &__item {
+                    margin-bottom: 16px;
+
+                    img {
+                        height: 200px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 641px) and (max-width: 1024px) {
+        &__content {
+            &__itens {
+                display: block;
+
+                &__item {
+                    margin-bottom: 32px;
+
+                    img {
+                        height: 400px;
+
+                    }
+
+                    &__text {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
 }
-
-/*    @media (max-width: 640px) {
-        .container {
-            display: block;
-        }
-
-        &__details {
-            margin-right: 0;
-            margin-bottom: 16px;
-        }
-
-        &__image {
-            width: 100%;
-        }
-    } */

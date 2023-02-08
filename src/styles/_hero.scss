@@ -36,26 +36,16 @@
         padding: 12px 48px;
         font-size: 32px;
         text-decoration: none;
-        // white-space: nowrap;
+        white-space: nowrap;
         background-color: variables.$corTerciaria;
+
+        @media (max-width: 640px) {
+            padding: 12px 12px;
+            font-size: 24px;
+        }
     }
 
     &__content {
         padding-bottom: 64px;
     }
-
-    /* 
-    @media (max-width: 640px) {
-        padding: 40px 0;
-
-        &__logo {
-            height: 40px;
-        }
-
-        &__text {
-            font-size: 22px;
-            line-height: 24px;
-            margin: 24px 0;
-        }
-    } */
 }
