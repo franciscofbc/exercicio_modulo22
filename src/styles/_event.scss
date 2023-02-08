@@ -1,0 +1,77 @@
+@use "variables";
+
+.event {
+    padding: 80px 0;
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 80%;
+    }
+
+    &__details {
+        &__text {
+
+
+            color: #000;
+
+            &--big {
+                font-size: 32px;
+
+            }
+
+            &--small {}
+
+            &--count {
+                padding-top: 16px;
+
+                &--span {
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+
+    .infos-bar {
+        text-align: center;
+        text-transform: uppercase;
+
+        &__infos {
+
+
+            &__item {
+                background-color: variables.$corSecundaria;
+                width: 150px;
+
+                &--small {
+                    font-weight: 900;
+                    color: variables.$secondaryTextColor;
+                }
+
+                &--big {
+                    font-size: 48px;
+                    font-weight: 600;
+
+                    &--hour {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    /*    @media (max-width: 640px) {
+        .container {
+            display: block;
+        }
+
+        &__details {
+            margin-right: 0;
+            margin-bottom: 16px;
+        }
+
+        &__image {
+            width: 100%;
+        }
+    } */
+}
